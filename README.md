@@ -1,25 +1,23 @@
-# JavascriptLab
+# JavaScript Exercises
 
-Colección de prácticas de JavaScript. El ejemplo disponible es un temporizador en `Temporizador/index.html`.
+A collection of small browser-based JavaScript exercises. The current repository contains a **timer example** in `Temporizador/`.
 
-## Estructura
+## Run the timer
 
-- [Temporizador](Temporizador)
-
-## Preparación y uso
-
-Sirve la raíz con un servidor estático; por ejemplo, si tienes Python 3:
+There is no package manifest or build step. Serve the repository root with a static HTTP server; for example, with Python 3:
 
 ```sh
 python -m http.server 8000 --bind 127.0.0.1
 ```
 
-Abre `http://127.0.0.1:8000/` y navega al ejemplo:
+Open **http://127.0.0.1:8000/Temporizador/**.
 
-- [Temporizador/index.html](Temporizador/index.html)
+## Source
 
-Los recursos cargados desde servicios externos requieren conexión. La comprobación local debe incluir la consola del navegador y la carga de imágenes, scripts y estilos.
+Start with [Temporizador/index.html](Temporizador/index.html). The directory name is retained from the original exercise.
 
-## Validación y estado
+## Development
 
-Esta guía se contrastó con el árbol de archivos y los manifiestos del repositorio. No se ha validado una ejecución completa contra servicios externos, bases de datos o hardware. Las versiones y los scripts mostrados describen el código actual; no implican que sus dependencias antiguas sigan siendo compatibles.
+Keep new exercises in separate directories with an `index.html` entry point. Document any required external scripts alongside the exercise.
+
+The current repository does not contain automated tests. Check the timer controls and browser console manually after changes. Externally loaded resources require a working connection and have not been revalidated during this documentation update.
